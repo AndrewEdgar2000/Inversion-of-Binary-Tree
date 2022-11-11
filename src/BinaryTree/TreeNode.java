@@ -10,9 +10,11 @@ package BinaryTree;
  */
 public class TreeNode {
     
+    //Attributes of TreeNode
     int data; 
     TreeNode left, right;
     
+    //Constructor for TreeNode object
     public TreeNode(int item) {
         this.data = item;
         left = right = null;

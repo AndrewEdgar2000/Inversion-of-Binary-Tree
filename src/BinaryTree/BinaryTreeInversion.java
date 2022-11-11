@@ -15,19 +15,25 @@ public class BinaryTreeInversion {
      */
     public static void main(String[] args) {
         
+        //Creating binary tree object 
         BinaryTree tree = new BinaryTree();
+        
+        //Declaring and adding nodes to BinaryTree object
         tree.root = new TreeNode(2);
         tree.root.left = new TreeNode(1);
         tree.root.right = new TreeNode(4);
         tree.root.right.left = new TreeNode(3);
         tree.root.left.right = new TreeNode(5);
         
+        //Printing original order of tree (Not Inverted)
         System.out.println("Inorder traversal of input tree is: ");
         tree.printTree(tree.root);
         System.out.println("");
         
+        //Inverting the tree using the invert function
         tree.invert();
         
+        //Printing the inverted tree
         System.out.println("Inorder traversal of binary tree is: ");
         tree.printTree(tree.root);
     }

@@ -10,12 +10,15 @@ package BinaryTree;
  */
 public class BinaryTree {
     
+    //Attributes of Binary Tree
     TreeNode root;
+    
     
     public void invert(){
         root = invert(root);
     }
     
+    //Function to invert the nodes in the tree
     public TreeNode invert(TreeNode node){
         if (node == null){
             return node;
